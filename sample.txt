@@ -2,3 +2,10 @@ https://github.com/radhika-ct/chandu.gid
 dfdjdj
 booking
 sdsd
+---
+- hosts: all
+  tasks:
+  - name: create file sample.txt
+  file:
+     path: "/etc/ansible/sample.txt" 
+     state: touch
